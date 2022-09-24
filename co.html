@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+        * {
+            margin-top: 10px;
+        }
+
+        .name {
+            font-size: 100px;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            transform: translate(-136px, 98px);
+
+        }
+
+        p {
+            color: white;
+            margin: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 50px;
+        }
+
+        #myDIV {
+            width: 1000px;
+            height: 350px;
+            animation: mymove 20s infinite;
+            border-radius: 15px;
+            position: absolute;
+            display: flex;
+            transform: translate(250px);
+            margin-right: 50px;
+            margin-top: 150px;
+        }
+
+        @keyframes mymove {
+            0% {
+
+                box-shadow: 0 5px 30px #ff1500;
+                box-shadow: 0 5px 50px #ff1500;
+                box-shadow: 0 5px 70px #ff1500;
+            }
+
+            10% {
+
+                box-shadow: 0 0px 50px #ff6f00;
+                box-shadow: 0 0px 30px #ff6f00;
+                box-shadow: 0 0px 70px #ff6f00;
+            }
+
+            20% {
+
+                box-shadow: 0 5px 30px #ffff00;
+                box-shadow: 0 5px 50px #ffff00;
+                box-shadow: 0 5px 70px #ffff00;
+            }
+
+            30% {
+
+                box-shadow: 0 5px 30px #5eff00;
+                box-shadow: 0 5px 50px #5eff00;
+                box-shadow: 0 5px 70px #5eff00;
+            }
+
+            40% {
+
+                box-shadow: 0 5px 30px #00ffee;
+                box-shadow: 0 5px 50px #00ffee;
+                box-shadow: 0 5px 70px #00ffee;
+            }
+
+            50% {
+
+                box-shadow: 0 5px 30px #007bff;
+                box-shadow: 0 5px 50px #007bff;
+                box-shadow: 0 5px 70px #007bff;
+            }
+
+            60% {
+
+                box-shadow: 0 5px 30px #0d00ff;
+                box-shadow: 0 5px 50px #0d00ff;
+                box-shadow: 0 5px 70px #0d00ff;
+            }
+
+            70% {
+
+                box-shadow: 0 5px 30px #8000ff;
+                box-shadow: 0 5px 50px #8000ff;
+                box-shadow: 0 5px 70px #8000ff;
+            }
+
+            80% {
+
+                box-shadow: 0 5px 30px #f700ff;
+                box-shadow: 0 5px 50px #f700ff;
+                box-shadow: 0 5px 70px #f700ff;
+            }
+
+            90% {
+
+                box-shadow: 0 5px 30px #ff007b;
+                box-shadow: 0 5px 50px #ff007b;
+                box-shadow: 0 5px 70px #ff007b;
+            }
+
+            100% {
+
+                box-shadow: 0 5px 30px #ff0011;
+                box-shadow: 0 5px 50px #ff0011;
+                box-shadow: 0 5px 70px #ff0011;
+            }
+        }
+
+
+
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .ball1 {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            transform: translate(6px, 101px);
+            background: linear-gradient(rgb(255, 24, 97), rgb(255, 180, 40))
+        }
+
+        .ball2 {
+            height: 60px;
+            width: 60px;
+            border-radius: 30px;
+            transform: translate(0px, 53px);
+            background: linear-gradient(rgb(255, 24, 97), rgb(255, 180, 40))
+        }
+
+        .ball3 {
+            height: 30px;
+            width: 30px;
+            border-radius: 20px;
+            transform: translate(-26px, 19px);
+            background: linear-gradient(rgb(255, 24, 97), rgb(255, 180, 40))
+        }
+
+        @keyframes MoveUpDown {
+
+            0%,
+            100% {
+                transform: translate(0, 20px);
+            }
+
+            50% {
+                transform: translate(0, -20px);
+            }
+        }
+
+
+
+        .ball-l {
+            animation: MoveUpDown 2s infinite;
+            justify-content: right;
+            display: flex;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        ul li a {
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: white;
+            margin: 0 10px;
+            padding: 10px 25px;
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        ul li a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+            z-index: -1;
+            border-radius: 5px;
+            transition: 0.5s;
+            background: rgb(69, 69, 69);
+
+        }
+
+        ul li a:hover::before {
+            width: 100%;
+
+        }
+
+        ul li a:hover {
+            font-size: 20px;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <b>
+        <ul>
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+    </b>
+    <div id="myDIV">
+        <p>Hello! I am</p>
+        <br>
+        <div class="name"><b>Om Ghumre</b></div>
+    </div>
+    <div class="ball-l">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+    </div>
+
+</body>
+
+</html>
